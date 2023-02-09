@@ -1,0 +1,135 @@
+/* SM: minimum viewport width 576px or above */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  /* BEGIN OF HEADER */
+  header .navbar {
+    padding: 25px 40px;
+  }
+
+  header .navbar .nav-list button.hamburger-btn {
+    display: none;
+  }
+
+  header .navbar .nav-list .nav-items {
+    padding: 0;
+    flex-direction: row;
+    width: auto;
+  }
+
+  header .navbar .nav-list .nav-items .nav-item a {
+    font-size: initial;
+  }
+  /* END OF HEADER */
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .input-control-dbl {
+    flex-direction: row;
+  }
+
+  /* BEGIN OF HEADER */
+  header .navbar .logo {
+    font-size: 1.5rem;
+  }
+
+  header .navbar .nav-list .nav-items {
+    position: static;
+    transform: translateX(0);
+  }
+  /* END OF HEADER */
+
+  /* BEGIN OF MAIN */
+  /* HERO */
+  main .hero {
+    flex-direction: row;
+  }
+  main .hero .user-info {
+    flex-grow: 1;
+    flex-basis: 60%;
+  }
+  main .hero .avatar {
+    flex-basis: 40%;
+  }
+  main .hero .avatar img {
+    width: 100%;
+  }
+
+  /* ABOUT */
+  main .about .main-about {
+    flex-direction: row;
+  }
+  main .about .main-about .photo-profile {
+    flex-basis: 40%;
+  }
+  main .about .main-about .description {
+    flex-basis: 60%;
+  }
+  main .about .main-about .description .download-cv {
+    width: fit-content;
+  }
+
+  /* SKILLS */
+  main .skills .main-skills .skill-list {
+    gap: 24px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+
+  /* PORTFOLIOS */
+  main .portfolios .main-portfolios .portfolio-list {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 24px;
+  }
+  /* END OF MAIN */
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* BEGIN OF HEADER */
+  header .navbar {
+    padding: 30px 50px;
+  }
+  /* END OF HEADER */
+
+  /* BEGINNING OF MAIN */
+  /* HERO */
+  main .hero .user-intro .name {
+    font-size: 3rem;
+  }
+
+  /* SKILLS */
+  main .skills .main-skills .skill-list {
+    gap: 32px;
+  }
+
+  /* PORTFOLIOS */
+  main .portfolios .main-portfolios .portfolio-list {
+    gap: 32px;
+  }
+  /* END OF MAIN */
+}
+
+/* XL: minimum viewport width 1200px or above */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* BEGIN OF MAIN */
+  /* PORTFOLIOS */
+  main .portfolios .main-portfolios .portfolio-list {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  /* END OF MAIN */
+}
