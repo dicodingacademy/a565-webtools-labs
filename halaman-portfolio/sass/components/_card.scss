@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as var;
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 8px;
+  border: 1px solid #00000055;
+  border-radius: var.$secondary-border-radius;
+
+  transition: 0.25s ease-in-out;
+}

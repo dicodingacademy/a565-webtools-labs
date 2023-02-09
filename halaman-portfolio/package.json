@@ -1,0 +1,17 @@
+{
+  "name": "halaman-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass sass/main.scss css/styles.css --watch",
+    "serve": "http-server . --port 9000 -o / -c-1"
+  },
+  "keywords": [],
+  "author": "Nur Rizki Adi Prasetyo <nrizki@dicoding.com>",
+  "repository": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

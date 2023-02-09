@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as var;
+
+button {
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+
+  background-color: transparent;
+  border-radius: var.$secondary-border-radius;
+  border: 2px solid #00000022;
+
+  transition: var.$button-transitionanim-time var.$button-transitionanim-style;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var.$primary-color;
+  color: white;
+}
+
+button:focus {
+  background-color: initial;
+  transition: 0.05s ease-in-out;
+  outline: 3px solid #1e2834;
+}
+
+button.dark-btn {
+  background-color: #2d3e50;
+  color: white;
+}
+
+button.dark-btn:hover {
+  background-color: transparent;
+  color: #000000;
+}

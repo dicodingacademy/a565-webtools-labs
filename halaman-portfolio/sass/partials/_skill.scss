@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:map';
+
+main .skills .main-skills .skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 16px;
+
+  .card {
+    @include mix.bounce-shadow;
+
+    .card-image {
+      @include mix.full-size;
+
+      flex-grow: 1;
+      display: flex;
+    }
+
+    .card-image img {
+      width: 80%;
+      margin: auto;
+      line-height: 0;
+
+      transition: 0.3s ease-in-out;
+      filter: grayscale(1);
+    }
+
+    &:hover .card-image img {
+      filter: grayscale(0);
+    }
+
+    .card-body .skill-name {
+      margin-block-start: 16px;
+      padding: 8px 16px;
+      text-align: center;
+
+      font-size: 24px;
+    }
+  }
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'md')) {
+  main .skills .main-skills .skill-list {
+    gap: 24px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'lg')) {
+  main .skills .main-skills .skill-list {
+    gap: 32px;
+  }
+}

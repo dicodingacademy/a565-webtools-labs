@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as var;
+@use 'sass:map';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var.$primary-fonts;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  padding: 8px 16px;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* MAIN */
+main .section {
+  padding-block: 4rem 2rem;
+
+  .section-title {
+    text-align: center;
+    margin-block: 32px 72px;
+    margin-inline: auto;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-50%);
+
+      height: 6px;
+      width: 200px;
+      background-color: #1e2834;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+
+      border: 6px solid white;
+      box-sizing: content-box;
+
+      height: 14px;
+      width: 30px;
+      background-color: aqua;
+    }
+  }
+}
+
+/* SM: minimum viewport width 576px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'sm')) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'md')) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'lg')) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* XL: minimum viewport width 1200px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'xl')) {
+  .container {
+    max-width: 1140px;
+  }
+}

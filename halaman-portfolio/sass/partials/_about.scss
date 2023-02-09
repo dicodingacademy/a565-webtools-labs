@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as var;
+@use 'sass:map';
+
+main .about .main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+
+  .photo-profile img {
+    width: 80%;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .description {
+    p {
+      line-height: 20px;
+      margin-block-end: 8px;
+    }
+
+    .download-cv {
+      width: 100%;
+      padding: 10px 3rem;
+      margin-block-start: 16px;
+
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: map.get(var.$breakpoints, 'md')) {
+  main .about .main-about {
+    flex-direction: row;
+
+    .photo-profile {
+      flex-basis: 40%;
+    }
+
+    .description {
+      flex-basis: 60%;
+
+      .download-cv {
+        width: fit-content;
+      }
+    }
+  }
+}
