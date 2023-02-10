@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+          <span class="navbar-brand"><%= brandName %></span>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"><%= navLinks %></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="container py-5">
+          <h1 class="mb-3">Edit Transaksi</h1>
+
+          <form class="row g-3" id="editRecordForm" novalidate>
+            <div class="col-12 col-md-6">
+              <label for="validationCustomRecordName" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="validationCustomRecordName" required />
+              <div class="invalid-feedback">Wajib diisi</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomAmount" class="form-label">Jumlah Uang</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">Rp</span>
+                <input type="number" class="form-control" id="validationCustomAmount" required />
+                <div class="invalid-feedback">Wajib diisi</div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomDate" class="form-label">Tanggal</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="validationCustomDate"
+                  required
+                />
+                <div class="invalid-feedback">Wajib diisi</div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomNotes" class="form-label">Catatan</label>
+              <textarea class="form-control" id="validationCustomNotes" rows="3"></textarea>
+              <div class="invalid-feedback">Wajib diisi</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomEvidence" class="form-label">Bukti tagihan</label>
+              <div style="width: 100%; height: 15rem" class="mb-3">
+                <img
+                  class="img-fluid h-100"
+                  src=""
+                  alt="Evidence of records"
+                  id="validationCustomEvidenceImg"
+                />
+                <div
+                  class="w-100 h-100 d-none"
+                  style="
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                  "
+                  id="validationCustomEvidenceImgChange"
+                ></div>
+              </div>
+              <input
+                type="file"
+                class="form-control"
+                id="validationCustomEvidence"
+                accept="image/*"
+                required
+              />
+              <div class="invalid-feedback">Wajib diisi</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-label">Tipe</div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recordType"
+                  id="recordTypeIncome"
+                  value="income"
+                  required
+                />
+                <label class="form-check-label" for="recordTypeIncome">Pemasukan</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recordType"
+                  id="recordTypeExpense"
+                  value="expense"
+                  required
+                />
+                <label class="form-check-label" for="recordTypeExpense">Pengeluaran</label>
+              </div>
+              <div class="invalid-feedback">Wajib diisi</div>
+            </div>
+
+            <div class="col-12 text-end">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4"><%= footerContent %></div>
+      </div>
+    </footer>
+  </body>
+</html>
