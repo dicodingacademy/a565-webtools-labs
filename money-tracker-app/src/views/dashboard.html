@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+          <span class="navbar-brand"><%= brandName %></span>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"><%= navLinks %></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="container py-5">
+          <h1 class="mb-3">Dashboard</h1>
+
+          <!-- Card Information -->
+          <div class="row mb-5 g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 bg-primary text-bg-primary bg-gradient">
+                <div class="card-body">
+                  <h1 class="card-title fs-2">
+                    <span id="numberOfTransactions">0</span> Transaksi<br />
+                    <span class="fs-5">Bulan ini</span>
+                  </h1>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 bg-success text-bg-success bg-gradient">
+                <div class="card-body">
+                  <h1 class="card-title fs-2">
+                    Rp <span id="amountIncome">0</span><br />
+                    <span class="fs-5">Total pemasukan</span>
+                  </h1>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4">
+              <div class="card h-100 bg-warning text-bg-warning bg-gradient">
+                <div class="card-body">
+                  <h1 class="card-title fs-2">
+                    Rp <span id="amountExpense">0</span><br />
+                    <span class="fs-5">Total pengeluaran</span>
+                  </h1>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Records -->
+          <div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h1>Riwayat Transaksi</h1>
+              <a class="btn btn-primary text-capitalize" href="/transactions/add.html">
+                <i class="bi bi-plus-lg me-1"></i>Tambah Transaksi
+              </a>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col">
+                <table class="table table-sm table-bordered" id="recordsTable">
+                  <thead>
+                    <tr>
+                      <th class="text-center">No</th>
+                      <th class="text-center">Tipe</th>
+                      <th class="text-center">Nama</th>
+                      <th class="text-center">Jumlah</th>
+                      <th class="text-center">Tanggal</th>
+                      <th class="text-center">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4"><%= footerContent %></div>
+      </div>
+    </footer>
+  </body>
+</html>
