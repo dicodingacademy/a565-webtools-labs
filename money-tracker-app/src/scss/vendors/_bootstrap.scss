@@ -1,0 +1,46 @@
+// ==================================================
+// Bootstrap
+// ==================================================
+
+//
+// Functions Bootstrap
+//
+@import '~bootstrap/scss/functions';
+
+//
+// Variables Bootstrap
+//
+@import '~bootstrap/scss/variables';
+
+// Menerapkan/override variables Bootstrap apa pun di sini
+
+//
+// Konfigurasi Bootstrap
+//
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/reboot';
+
+//
+// Layouts dan components
+//
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+
+@import '~bootstrap/scss/helpers';
+
+// Komponen-Komponen
+@import '~bootstrap/scss/buttons';
+
+//
+// Utilities API untuk menghasilkan utility classes
+//
+@import '~bootstrap/scss/utilities/api';
+
+//
+// Tambahkan custom code di sini
+//
