@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="container py-5">
+          <h1 class="mb-3">Dashboard</h1>
+
+          <!-- Card Information -->
+          <div class="row mb-5 g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <card-dashboard
+                id="transactions-card"
+                content="0 Transaksi"
+                description="Bulan ini"
+                classes="h-100 bg-primary text-bg-primary bg-gradient"
+              ></card-dashboard>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <card-dashboard
+                id="income-card"
+                content="Rp 0"
+                description="Total pemasukan"
+                classes="h-100 bg-success text-bg-success bg-gradient"
+              ></card-dashboard>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4">
+              <card-dashboard
+                id="expense-card"
+                content="Rp 0"
+                description="Total pengeluaran"
+                classes="h-100 bg-warning text-bg-warning bg-gradient"
+              ></card-dashboard>
+            </div>
+          </div>
+
+          <!-- Records -->
+          <div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h1>Riwayat Transaksi</h1>
+              <button-link
+                classes="btn-primary text-capitalize"
+                to="/transactions/add.html"
+                icon="bi-plus-lg"
+                content="Tambah Transaksi"
+              ></button-link>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col">
+                <table class="table table-sm table-bordered" id="recordsTable">
+                  <thead>
+                    <tr>
+                      <th class="text-center">No</th>
+                      <th class="text-center">Tipe</th>
+                      <th class="text-center">Nama</th>
+                      <th class="text-center">Jumlah</th>
+                      <th class="text-center">Tanggal</th>
+                      <th class="text-center">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+
+    <modal-transaction
+      title="Rincian Transaksi"
+      class="modal fade"
+      id="recordDetailModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+    ></modal-transaction>
+  </body>
+</html>

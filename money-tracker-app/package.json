@@ -1,0 +1,42 @@
+{
+  "name": "money-tracker-app",
+  "version": "1.0.0",
+  "description": "Money Tracker App is an app to create snapshot for every transaction that the user has doing",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack serve --config webpack.dev.js",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@lit/localize-tools": "^0.6.7",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@lit/localize": "^0.11.4",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "lit": "^2.6.1"
+  }
+}
