@@ -1,0 +1,58 @@
+{
+  "code": 200,
+  "error": false,
+  "message": "Success to retrieve data",
+  "results": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@doe.com",
+    "photoUrl": "/img/users/photo-profile.jpg",
+    "transactionsHistory": [
+      {
+        "id": 1,
+        "type": "income",
+        "name": "Gaji Bulanan",
+        "date": "2022-12-30T12:59",
+        "amount": 5000000,
+        "evidenceUrl": "/img/transactionsHistory/1.jpg",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit."
+      },
+      {
+        "id": 2,
+        "type": "expense",
+        "name": "Belanja Bulanan",
+        "date": "2022-12-30T12:00",
+        "amount": 200000,
+        "evidenceUrl": "/img/transactionsHistory/2.jpg",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit."
+      },
+      {
+        "id": 3,
+        "type": "income",
+        "name": "Bonus Kantor",
+        "date": "2022-12-30T12:00",
+        "amount": 1000000,
+        "evidenceUrl": "/img/transactionsHistory/3.jpg",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit."
+      },
+      {
+        "id": 4,
+        "type": "expense",
+        "name": "Renovasi keyboard mekanikal",
+        "date": "2022-12-30T12:00",
+        "amount": 750000,
+        "evidenceUrl": "/img/transactionsHistory/4.jpg",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit."
+      },
+      {
+        "id": 5,
+        "type": "expense",
+        "name": "Menabung",
+        "date": "2022-12-30T12:00",
+        "amount": 3500000,
+        "evidenceUrl": "/img/transactionsHistory/5.jpg",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit."
+      }
+    ]
+  }
+}
