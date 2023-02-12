@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <main class="min-vh-100 d-flex">
+      <div class="m-auto container py-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h1 class="text-center">Login</h1>
+
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label for="validationCustomRecordEmail" class="form-label">Email</label>
+                <input-with-validation
+                  type="text"
+                  inputId="validationCustomRecordEmail"
+                  invalidFeedbackMessage="Wajib diisi"
+                  required
+                ></input-with-validation>
+              </div>
+
+              <div class="mb-3">
+                <label for="validationCustomPassword" class="form-label">Password</label>
+                <input-with-validation
+                  type="password"
+                  inputId="validationCustomPassword"
+                  invalidFeedbackMessage="Wajib diisi"
+                  required
+                ></input-with-validation>
+              </div>
+
+              <div class="col-12 text-end">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+
+            <div class="mt-4 text-center">
+              Belum punya akun? <a href="/auth/register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
