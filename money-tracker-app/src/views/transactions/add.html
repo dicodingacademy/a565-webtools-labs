@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="container py-5">
+          <h1 class="mb-3">Tambah Transaksi</h1>
+
+          <form class="row g-3" id="addRecordForm" novalidate>
+            <div class="col-12 col-md-6">
+              <label for="validationCustomRecordName" class="form-label">Nama</label>
+              <input-with-validation
+                type="text"
+                inputId="validationCustomRecordName"
+                invalidFeedbackMessage="Wajib diisi"
+                required
+              ></input-with-validation>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomAmount" class="form-label">Jumlah Uang</label>
+              <input-group-with-validation
+                type="number"
+                inputGroupText="Rp"
+                inputId="validationCustomAmount"
+                invalidFeedbackMessage="Wajib diisi"
+                validation
+                required
+              ></input-group-with-validation>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomDate" class="form-label">Tanggal</label>
+              <input-group-with-validation
+                type="datetime-local"
+                inputId="validationCustomDate"
+                inputGroupIcon="bi-calendar-event"
+                invalidFeedbackMessage="Wajib diisi"
+                validation
+                required
+              ></input-group-with-validation>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomNotes" class="form-label">Catatan</label>
+              <textarea-with-validation
+                inputId="validationCustomNotes"
+                invalidFeedbackMessage="Wajib diisi"
+                required
+              ></textarea-with-validation>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="validationCustomEvidence" class="form-label">Bukti tagihan</label>
+              <input-image-with-preview
+                inputId="validationCustomEvidence"
+                invalidFeedbackMessage="Wajib diisi"
+                required
+              ></input-image-with-preview>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-label">Tipe</div>
+              <input-radio-with-validation
+                id="inputRadioTransactionTypeAdd"
+                invalidFeedbackMessage="Wajib diisi"
+                name="recordType"
+                required
+              ></input-radio-with-validation>
+            </div>
+
+            <div class="col-12 text-end">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
