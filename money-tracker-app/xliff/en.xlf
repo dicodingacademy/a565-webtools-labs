@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file target-language="en" source-language="id" original="lit-localize-inputs" datatype="plaintext">
+    <body>
+      <trans-unit id="s48d08afb2fffe7fd">
+        <source>Tipe</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="sef49b2c68fd1e332">
+        <source>Nama</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="sc72cca9281ef6073">
+        <source>Tanggal</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="s408b01f4fe1ee891">
+        <source>Jumlah Uang</source>
+        <target>Amount</target>
+      </trans-unit>
+      <trans-unit id="s50fa71c148532fe5">
+        <source>Catatan</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="s749c72374d54863f">
+        <source>Tutup</source>
+        <target>Close</target>
+      </trans-unit>
+      <trans-unit id="sf9a862bfd829397e">
+        <source>Dasbor</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="s8d9d6501de2bbd98">
+        <source>Tambah Data</source>
+        <target>Add Record</target>
+      </trans-unit>
+      <trans-unit id="s45dab30b4d2d3c14">
+        <source>Masuk</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="s229fb4df9ecf3ed1">
+        <source>Keluar</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="sf70ed558ed523ac4">
+        <source>Dibuat dengan ❤ oleh Dicoding Indonesia</source>
+        <target>Built with ❤ by Dicoding Indonesia</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
