@@ -14,7 +14,7 @@ class NavLinks extends LitWithoutShadowDom {
         <nav-link content="${msg(`Dasbor`)}" to="/"></nav-link>
         <nav-link content="${msg(`Tambah Data`)}" to="/transactions/add.html"></nav-link>
         <nav-link-auth class="d-none" id="userLoggedMenu"></nav-link-auth>
-        <nav-link content="${msg(`Masuk`)}" to="#"></nav-link>
+        <nav-link content="${msg(`Masuk`)}" to="#" id="loginMenu"></nav-link>
       </ul>
     `;
   }
