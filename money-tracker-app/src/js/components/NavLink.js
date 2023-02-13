@@ -16,9 +16,6 @@ class NavLink extends LitWithoutShadowDom {
     if (!this.hasAttribute('to')) {
       throw new Error(`Atribut "to" harus diterapkan pada elemen ${this.localName}`);
     }
-    if (!this.hasAttribute('content')) {
-      throw new Error(`Atribut "content" harus diterapkan pada elemen ${this.localName}`);
-    }
   }
 
   render() {
