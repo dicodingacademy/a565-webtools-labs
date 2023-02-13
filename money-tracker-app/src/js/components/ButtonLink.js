@@ -1,4 +1,4 @@
-import { html, nothing } from 'lit';
+import { html } from 'lit';
 import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 
 class ButtonLink extends LitWithoutShadowDom {
