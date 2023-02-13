@@ -8,7 +8,7 @@ class NavLinks extends LitWithoutShadowDom {
         <nav-link content="Dashboard" to="/"></nav-link>
         <nav-link content="Add Record" to="/transactions/add.html"></nav-link>
         <nav-link-auth class="d-none" id="userLoggedMenu"></nav-link-auth>
-        <nav-link content="Log In" to="#"></nav-link>
+        <nav-link content="Log In" to="#" id="loginMenu"></nav-link>
       </ul>
     `;
   }
