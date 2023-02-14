@@ -25,7 +25,7 @@ const Dashboard = {
 
       const button = event.relatedTarget;
       const dataRecord = this._userTransactionsHistory.find((item) => {
-        return item.id === parseInt(button.dataset.recordId, 10);
+        return item.id == button.dataset.recordId;
       });
 
       this._populateDetailTransactionToModal(dataRecord);
