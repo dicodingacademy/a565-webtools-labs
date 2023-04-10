@@ -2,31 +2,39 @@
 @use '../abstracts/mixins' as mix;
 @use 'sass:map';
 
-header .navbar {
-  padding: 20px 25px;
-  max-width: 1400px;
-  margin-inline: auto;
+header {
+  .navbar-wrapper {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: 0;
+    z-index: 9999;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    transition: box-shadow 0.2s ease-in-out;
 
-  .logo {
-    text-transform: lowercase;
-    font-size: 1.3rem;
-    font-weight: 800;
+    &.scrolled {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px 4px #00000055;
+    }
   }
 
-  .nav-list {
+  .navbar {
+    padding: 22px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     .nav-items {
-      @include mix.floating-object($is-full-height: true);
-      width: 75vw;
-      padding: 40px 20px;
+      position: fixed;
+      inset-block-start: 5rem;
+      inset-inline: 0;
+
+      padding: 30px 20px;
       background-color: white;
 
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
 
       transition: 0.35s ease-in-out;
       transform: translateX(-100%);
@@ -36,19 +44,23 @@ header .navbar {
 
       &.active {
         transform: translateX(0);
-        box-shadow: 0 2px 8px 4px #00000055;
+        box-shadow: 0 6px 8px 0 #00000033;
 
         animation: appear 0.5s ease-in-out;
       }
 
       .nav-item a {
-        padding: 2px 12px;
-        font-size: 18px;
+        display: inline-block;
 
-        background-color: white;
+        padding: 6px 12px;
+        font-size: 1rem;
+
+        transition: all 0.15s ease-in-out;
 
         &:hover {
-          text-decoration: underline;
+          color: #2d3e50;
+
+          text-shadow: 0 0 2px #000000;
         }
       }
     }
@@ -59,35 +71,25 @@ header .navbar {
 @media screen and (min-width: map.get(var.$breakpoints, 'sm')) {
   header .navbar {
     padding: 25px 40px;
-
-    .nav-list {
-      button.hamburger-btn {
-        display: none;
-      }
-
-      .nav-items {
-        padding: 0;
-        flex-direction: row;
-        width: auto;
-
-        .nav-item a {
-          font-size: initial;
-        }
-      }
-    }
   }
 }
 
 /* MD: minimum viewport width 768px or above */
 @media screen and (min-width: map.get(var.$breakpoints, 'md')) {
   header .navbar {
-    .logo {
-      font-size: 1.5rem;
+    button.hamburger-btn {
+      display: none;
     }
 
-    .nav-list .nav-items {
+    .nav-items {
       position: static;
       transform: translateX(0);
+      opacity: 1;
+      padding: 0;
+
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
     }
   }
 }
@@ -95,6 +97,6 @@ header .navbar {
 /* LG: minimum viewport width 992px or above */
 @media screen and (min-width: map.get(var.$breakpoints, 'lg')) {
   header .navbar {
-    padding: 30px 50px;
+    padding: 24px 50px;
   }
 }

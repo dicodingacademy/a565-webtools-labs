@@ -1,5 +1,4 @@
 (function () {
-  // Make a web page not empty
   const header = document.querySelector('header');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
@@ -10,9 +9,17 @@
     document.querySelector('ul.nav-items').classList.toggle('active');
   });
 
-  document.querySelectorAll('main, footer').forEach((el) => {
-    el.addEventListener('click', (event) => {
+  window.addEventListener('resize', (event) => {
+    if (window.innerWidth > 768) {
       document.querySelector('ul.nav-items').classList.remove('active');
-    });
+    }
+  });
+
+  document.addEventListener('scroll', (event) => {
+    if (window.scrollY > 0) {
+      header.querySelector('.navbar-wrapper').classList.add('scrolled');
+    } else {
+      header.querySelector('.navbar-wrapper').classList.remove('scrolled');
+    }
   });
 })();

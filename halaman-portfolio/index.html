@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Halaman Portfolio</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Font Awesome 5.15 -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -15,31 +23,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header" id="header">
-      <nav class="navbar">
-        <a href="#" class="logo">Dicoding</a>
+      <div class="navbar-wrapper">
+        <nav class="navbar">
+          <img class="logo" src="/img/dicoding.png" alt="Dicoding Logo" height="36" />
 
-        <div class="nav-list">
           <button class="hamburger-btn" id="hamburger-btn"><i class="fas fa-bars"></i></button>
-
           <ul class="nav-items">
             <li class="nav-item">
-              <a href="#" rel="noopener noreferrer">About</a>
+              <a href="#about" rel="noopener noreferrer">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" rel="noopener noreferrer">Skills</a>
+              <a href="#skills" rel="noopener noreferrer">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#" rel="noopener noreferrer">Portfolio</a>
+              <a href="#portfolio" rel="noopener noreferrer">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="#" rel="noopener noreferrer">Contact Us</a>
+              <a href="#contact-us" rel="noopener noreferrer">Contact Us</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="main" id="main">
@@ -51,7 +61,7 @@
             <p class="title">Web Developer</p>
           </div>
           <div class="avatar">
-            <img src="public/img/circle-g.jpg" alt="" />
+            <img src="/img/circle-g.jpg" alt="Dicoding Logo G Only" />
           </div>
         </section>
 
@@ -60,7 +70,7 @@
           <h2 class="section-title">About</h2>
           <div class="main-about">
             <div class="photo-profile">
-              <img src="public/img/circle-g.jpg" alt="" />
+              <img src="/img/dicoding.png" alt="Dicoding Logo Full" />
             </div>
             <div class="description">
               <p>
@@ -87,7 +97,7 @@
             <div class="skill-list">
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/html5.png" alt="" />
+                  <img src="/img/html5.png" alt="Skill 1" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">HTML5</p>
@@ -95,7 +105,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/css3.png" alt="" />
+                  <img src="/img/css3.png" alt="Skill 2" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">CSS3</p>
@@ -103,7 +113,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/javascript.png" alt="" />
+                  <img src="/img/javascript.png" alt="Skill 3" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">JavaScript</p>
@@ -111,7 +121,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/nodejs.png" alt="" />
+                  <img src="/img/nodejs.png" alt="Skill 4" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">NodeJS</p>
@@ -119,7 +129,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/sass.png" alt="" />
+                  <img src="/img/sass.png" alt="Skill 5" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">Sass</p>
@@ -127,7 +137,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/bootstrap.png" alt="" />
+                  <img src="/img/bootstrap.png" alt="Skill 6" />
                 </div>
                 <div class="card-body">
                   <p class="skill-name">Bootstrap</p>
@@ -145,7 +155,7 @@
             <div class="portfolio-list">
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port1.jpg" alt="" />
+                  <img src="/img/portfolios/port1.jpg" alt="Portfolio 1" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -166,7 +176,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port2.jpg" alt="" />
+                  <img src="/img/portfolios/port2.jpg" alt="Portfolio 2" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -187,7 +197,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port3.jpg" alt="" />
+                  <img src="/img/portfolios/port3.jpg" alt="Portfolio 3" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -208,7 +218,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port4.jpg" alt="" />
+                  <img src="/img/portfolios/port4.jpg" alt="Portfolio 4" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -229,7 +239,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port5.jpg" alt="" />
+                  <img src="/img/portfolios/port5.jpg" alt="Portfolio 5" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -250,7 +260,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port6.jpg" alt="" />
+                  <img src="/img/portfolios/port6.jpg" alt="Portfolio 6" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -271,7 +281,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port7.jpg" alt="" />
+                  <img src="/img/portfolios/port7.jpg" alt="Portfolio 7" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -292,7 +302,7 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img src="public/img/portfolios/port1.jpg" alt="" />
+                  <img src="/img/portfolios/port1.jpg" alt="Portfolio 8" />
                 </div>
                 <div class="card-body floating">
                   <article>
@@ -316,29 +326,24 @@
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contacts section" id="contact">
+        <section class="contact-us section" id="contact-us">
           <h2 class="section-title">Contact Us</h2>
 
           <div class="main-contactus">
-            <form action="" class="contact-form">
+            <form class="contact-form">
               <div class="input-control-dbl">
                 <div class="input-control">
-                  <input type="text" id="name" required placeholder="Nama" />
+                  <input type="text" id="name" placeholder="Nama Anda" required />
                 </div>
                 <div class="input-control">
-                  <input type="email" id="email" required placeholder="Email" />
+                  <input type="email" id="email" placeholder="Email Anda" required />
                 </div>
               </div>
               <div class="input-control">
-                <input type="text" required placeholder="Subjek" />
+                <input type="text" id="subjectMessage" placeholder="Subyek pesan" required />
               </div>
               <div class="input-control">
-                <textarea
-                  name=""
-                  id="messages"
-                  rows="6"
-                  placeholder="Tuliskan pesan di sini..."
-                ></textarea>
+                <textarea name="message" id="message" rows="6" placeholder="Pesan"></textarea>
               </div>
               <div class="submit-control">
                 <button class="dark-btn" type="submit">Submit</button>
@@ -352,7 +357,7 @@
     <footer>
       <div class="container">
         <div class="copyright">
-          <p>Dibuat dengan <i class="fas fa-heart"></i> oleh Dicoding Indonesia</p>
+          <p>Dibuat oleh Dicoding Indonesia dengan <i class="fas fa-heart"></i></p>
         </div>
       </div>
     </footer>

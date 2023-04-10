@@ -15,15 +15,15 @@ main .skills .main-skills .skill-list {
 
       flex-grow: 1;
       display: flex;
-    }
 
-    .card-image img {
-      width: 80%;
-      margin: auto;
-      line-height: 0;
+      img {
+        width: 80%;
+        margin: auto;
+        line-height: 0;
 
-      transition: 0.3s ease-in-out;
-      filter: grayscale(1);
+        transition: 0.3s ease-in-out;
+        filter: grayscale(1);
+      }
     }
 
     &:hover .card-image img {
@@ -33,9 +33,9 @@ main .skills .main-skills .skill-list {
     .card-body .skill-name {
       margin-block-start: 16px;
       padding: 8px 16px;
-      text-align: center;
 
       font-size: 24px;
+      text-align: center;
     }
   }
 }

@@ -7,15 +7,19 @@ main .about .main-about {
   justify-content: space-between;
   gap: 32px;
 
-  .photo-profile img {
-    width: 80%;
-    display: block;
-    margin-inline: auto;
+  .photo-profile {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 80%;
+      display: block;
+      margin-inline: auto;
+    }
   }
 
   .description {
     p {
-      line-height: 20px;
       margin-block-end: 8px;
     }
 

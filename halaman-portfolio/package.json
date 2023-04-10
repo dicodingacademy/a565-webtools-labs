@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass:watch": "sass sass/main.scss css/styles.css --watch",
-    "serve": "http-server . --port 9000 -o / -c-1"
+    "serve": "http-server ."
   },
   "keywords": [],
   "author": "Nur Rizki Adi Prasetyo <nrizki@dicoding.com>",

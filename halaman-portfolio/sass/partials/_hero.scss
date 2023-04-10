@@ -2,6 +2,8 @@
 @use 'sass:map';
 
 main .hero {
+  padding-block: 14rem;
+
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
