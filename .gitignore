@@ -1,1 +1,13 @@
-node_modules
+### IDE
+.idea
+.vscode
+
+### Node
+# Dependency directories
+node_modules/
+
+# Package files
+package-lock.json
+
+### Additional directories
+dist/
