@@ -33,7 +33,6 @@ const Register = {
       try {
         const response = await Auth.register({
           name: formData.name,
-          username: formData.username,
           email: formData.email,
           password: formData.password,
         });
@@ -48,13 +47,11 @@ const Register = {
 
   _getFormData() {
     const name = document.querySelector('#validationCustomRecordName');
-    const username = document.querySelector('#validationCustomUsername');
     const email = document.querySelector('#validationCustomEmail');
     const password = document.querySelector('#validationCustomPassword');
 
     return {
       name: name.value,
-      username: username.value,
       email: email.value,
       password: password.value,
     };
