@@ -33,7 +33,6 @@ const Register = {
       try {
         const response = await Auth.register({
           name: formData.name,
-          username: formData.username,
           email: formData.email,
           password: formData.password,
         });
